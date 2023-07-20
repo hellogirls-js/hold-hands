@@ -1,7 +1,3 @@
-#tweet-page {
-  padding: 12vh 0;
-}
-
 #tweet-page-content {
   padding: 15px;
   padding-bottom: 0px;
@@ -100,6 +96,11 @@
 }
 
 @media screen and (max-width: 500px) {
+  
+  #tweet-page {
+    padding: 12vh 0;
+  }
+
   #tweet-page-reply-text {
     width: 33%;
     font-size: 1.2rem;

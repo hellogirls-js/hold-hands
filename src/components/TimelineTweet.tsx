@@ -30,7 +30,7 @@ export default function TimelineTweet({ tweet }: { tweet: Tweet }) {
         <div className="timeline-tweet-content-container">
           <div className="timeline-tweet-content-html" dangerouslySetInnerHTML={{ __html: tweet.tweet_content}}/>
           {tweet.media && tweet.media.map((m, i) => { 
-            return m.split('.')[2] === "mp4" ? (<video key={i} controls><source src={m} type="video/mp4" /></video>) : ""; 
+            return m.split('.')[2] === "mp4" ? (<video key={i} controls playsInline><source src={m} type="video/mp4" /></video>) : ""; 
           })}
           {tweet.original_tweetid !== undefined && tweet.is_qrt && <QuoteRetweet tweetId={tweet.original_tweetid} />}
           <div className="timeline-tweet-content-footer">

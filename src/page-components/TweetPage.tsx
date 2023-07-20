@@ -37,6 +37,9 @@ export default function TweetPage() {
           </div>
           <div id="tweet-page-goods">
             <div className="timeline-tweet-content-html" dangerouslySetInnerHTML={{ __html: tweet.tweet_content}}/>
+            {tweet.media && tweet.media.map((m, i) => { 
+              return m.split('.')[2] === "mp4" ? (<video key={i} controls playsInline><source src={m} type="video/mp4" /></video>) : ""; 
+            })}
           </div>
           {tweet.original_tweetid !== undefined && tweet.is_qrt && <QuoteRetweet tweetId={tweet.original_tweetid} />}
           <div id="tweet-page-timestamp">
