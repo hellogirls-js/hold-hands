@@ -1,10 +1,14 @@
 import React from "react";
+import { useNavigate } from "react-router";
 
-export default function MenuLink({ icon, name }: {icon: JSX.Element; name: string}) {
+export default function MenuLink({ icon, name, navigateTo }: {icon: JSX.Element; name: string; navigateTo?: string}) {
+
+  const navigate = useNavigate();
+
   return (
-    <div className="menu-link">
-      <div className="menu-link-icon">{icon}</div>
-      <div className="menu-link-name">{name}</div>
-    </div>
-  )
+      <div className="menu-link" onClick={() => navigateTo && navigate(navigateTo) }>
+        <div className="menu-link-icon">{icon}</div>
+        <div className="menu-link-name">{name}</div>
+      </div>
+    )
 }

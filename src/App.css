@@ -7,6 +7,10 @@
   color: #fff;
 }
 
+.body-link {
+  color: #1d9bf0;
+}
+
 #left-menu {
   position: fixed;
   left: 0;
@@ -250,13 +254,16 @@
     max-height: 90vh;
     min-height: 90vh;
     width: 100%;
+    max-width: 100%;
     margin: 0 auto;
+    box-sizing: border-box;
   }
 
   #content-header {
     width: 100%;
     position: fixed;
     top: 0;
+    box-sizing: border-box;
   }
 
   #post-editor, #bottom-area {

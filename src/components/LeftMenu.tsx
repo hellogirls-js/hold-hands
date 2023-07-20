@@ -36,7 +36,7 @@ export default function LeftMenu() {
           </div>
         </div>
         <nav id="left-menu-nav">
-          <MenuLink icon={<IconHome2 size={32} />} name="Home" />
+          <MenuLink icon={<IconHome2 size={32} />} name="Home" navigateTo="/" />
           <MenuLink icon={<IconSearch size={32} />} name="Explore" />
           <MenuLink icon={<IconBell size={32} />} name="Notifications" />
           <MenuLink icon={<IconMail size={32} />} name="Messages" />

@@ -7,7 +7,6 @@ import QuoteRetweet from "./QuoteRetweet";
 import { useNavigate } from "react-router";
 
 
-
 export default function TimelineTweet({ tweet }: { tweet: Tweet }) {
   const formatter = Intl.NumberFormat('en', { notation: "compact" });
   const navigate = useNavigate();
@@ -17,7 +16,7 @@ export default function TimelineTweet({ tweet }: { tweet: Tweet }) {
   const retweetCount = TWEETS.filter(t => t.is_qrt && t.original_tweetid === tweet.tweet_id).length + tweet.retweet_count + tweet.private_qrts;
 
   return (
-    <div className="timeline-tweet" onClick={() => { navigate(`${user.username}/status/${tweet.tweet_id}`, { replace: true })}}>
+    <div className="timeline-tweet" onClick={() => { navigate(`/${user.username}/status/${tweet.tweet_id}`)}}>
       <div className="timeline-tweet-icon">
         <Avatar user={user} />
       </div>
@@ -29,12 +28,11 @@ export default function TimelineTweet({ tweet }: { tweet: Tweet }) {
           <div className="timeline-tweet-time-passed">2h</div>
         </div>
         <div className="timeline-tweet-content-container">
-          <p>{tweet.tweet_content}</p>
+          <div className="timeline-tweet-content-html" dangerouslySetInnerHTML={{ __html: tweet.tweet_content}}/>
           {tweet.media && tweet.media.map((m, i) => { 
-            console.log(m);
             return m.split('.')[2] === "mp4" ? (<video key={i} controls><source src={m} type="video/mp4" /></video>) : ""; 
           })}
-          {tweet.original_tweetid !== undefined && tweet.is_qrt ? <QuoteRetweet tweetId={tweet.original_tweetid} /> : null}
+          {tweet.original_tweetid !== undefined && tweet.is_qrt && <QuoteRetweet tweetId={tweet.original_tweetid} />}
           <div className="timeline-tweet-content-footer">
             <div className="timeline-tweet-content-stat">
               <div className="timeline-tweet-content-stat-icon">

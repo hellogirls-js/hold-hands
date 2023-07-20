@@ -98,6 +98,10 @@
   text-overflow: ellipsis;
 }
 
+.timeline-tweet-content-container {
+  margin-top: 1%;
+}
+
 .timeline-tweet-content-container p {
   margin: 0;
   margin-top: 1%;

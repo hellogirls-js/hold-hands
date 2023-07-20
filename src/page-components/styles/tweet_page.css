@@ -1,0 +1,95 @@
+#tweet-page-content {
+  padding: 15px;
+  padding-bottom: 0px;
+  border-bottom: 1px solid #38444d;
+}
+
+#tweet-page-header {
+  display: flex;
+  gap: 10px;
+}
+
+#tweet-page-header-dn {
+  font-weight: 500;
+}
+
+#tweet-page-header-un, #tweet-page-timestamp {
+  color: #8b98a5;
+}
+
+#tweet-page-timestamp {
+  padding: 15px 0px;
+  border-bottom: 1px solid #38444d;
+}
+
+#tweet-page-goods {
+  font-size: 1.3rem;
+}
+
+#tweet-page-stats, .tweet-page-stat {
+  display: flex;
+  align-items: center;
+}
+
+#tweet-page-stats {
+  gap: 5%;
+  padding: 20px 0px;
+  border-bottom: 1px solid #38444d;
+}
+
+.tweet-page-stat {
+  gap: 7%;
+  cursor: pointer;
+}
+
+.tweet-page-stat-number {
+  font-weight: 500;
+}
+
+.tweet-page-stat-label {
+  color: #8b98a5;
+}
+
+#tweet-page-options {
+  padding: 15px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #8b98a5;
+  border-bottom: 1px solid #38444d;
+}
+
+#tweet-page-reply {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 2%;
+  padding: 15px 0px;
+}
+
+#tweet-page-reply-text {
+  flex-grow: 1;
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  font-family: inherit;
+  resize: none;
+}
+
+#tweet-page-reply-text:focus {
+  outline: none;
+}
+
+#tweet-page-reply-text::placeholder {
+  color: #99aab8;
+}
+
+#tweet-page-reply-button {
+  border: none;
+  border-radius: 25px;
+  background-color: #1d9bf0;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 10px 20px;
+}

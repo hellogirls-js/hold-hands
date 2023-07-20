@@ -8,7 +8,7 @@ export const TWEETS: Tweet[] = [
     created_at: "2023-07-19 09:00:00",
     like_count: 3,
     retweet_count: 2,
-    private_qrts: 3907,
+    private_qrts: 19445,
     views: 5743593
   },
   {
@@ -26,7 +26,7 @@ export const TWEETS: Tweet[] = [
   {
     tweet_id: 2,
     author: 2,
-    tweet_content: "{1} um. is this allowed",
+    tweet_content: "<span class='body-link'>@hiiroamagi</span> um. can you do something about this",
     created_at: "2023-07-19 09:02:30",
     like_count: 0,
     retweet_count: 0,
@@ -157,12 +157,12 @@ export const TWEETS: Tweet[] = [
   {
     tweet_id: 13,
     author: 8,
-    tweet_content: "Amagi, how old are you? These jokes are not anymore.",
+    tweet_content: "Amagi, how old are you? These jokes are not funny anymore.",
     created_at: "2023-07-19 09:23:00",
     like_count: 23,
     retweet_count: 0,
     private_qrts: 0,
-    views: 19433,
+    views: 1134,
     original_tweetid: 0,
     is_reply: true
   },
@@ -170,7 +170,7 @@ export const TWEETS: Tweet[] = [
     tweet_id: 14,
     author: 9,
     tweet_content: "CAN YOUR UNIT DO THIS???",
-    created_at: "2023-07-19 09:01:00",
+    created_at: "2023-07-19 09:03:00",
     like_count: 54943,
     retweet_count: 4329,
     private_qrts: 34,
