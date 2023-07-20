@@ -1,3 +1,7 @@
+#tweet-page {
+  padding: 12vh 0;
+}
+
 #tweet-page-content {
   padding: 15px;
   padding-bottom: 0px;
@@ -68,6 +72,7 @@
 }
 
 #tweet-page-reply-text {
+  flex-basis: 33%;
   flex-grow: 1;
   background-color: transparent;
   border: none;
@@ -92,4 +97,12 @@
   font-weight: 600;
   font-size: 1.1rem;
   padding: 10px 20px;
+}
+
+@media screen and (max-width: 500px) {
+  #tweet-page-reply-text {
+    width: 33%;
+    font-size: 1.2rem;
+  }
+
 }
