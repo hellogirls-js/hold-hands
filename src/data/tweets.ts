@@ -147,7 +147,7 @@ export const TWEETS: Tweet[] = [
     author: 7,
     tweet_content: "ratio",
     created_at: "2023-07-19 09:26:34",
-    like_count: 2,
+    like_count: 5,
     retweet_count: 0,
     private_qrts: 0,
     views: 1340,
