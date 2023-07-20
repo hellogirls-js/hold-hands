@@ -3,6 +3,7 @@
   border-radius: 15px;
   padding: 15px;
   margin-top: 10px;
+  cursor: pointer;
 }
 
 .quote-retweet-header {

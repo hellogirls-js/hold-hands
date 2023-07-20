@@ -85,7 +85,7 @@ export const TWEETS: Tweet[] = [
   {
     tweet_id: 7,
     author: 7,
-    tweet_content: "over 3k qrts dude just delete this shit already",
+    tweet_content: "over 10k qrts dude just delete this shit already",
     created_at: "2023-07-19 09:40:00",
     like_count: 29,
     retweet_count: 0,

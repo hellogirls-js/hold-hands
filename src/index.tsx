@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import TweetPage from './page-components/TweetPage';
 import Index from './page-components/Index';
+import QuoteRetweetsPage from './page-components/QuoteRetweetsPage';
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,14 @@ const router = createBrowserRouter([
       {
         path: ":username/status/:tweet_id",
         element: <TweetPage />
+      },
+      {
+        path: ":username/status/:tweet_id/retweets/with_comments",
+        element: <QuoteRetweetsPage />
+      },
+      {
+        path: "*",
+        element: <h1>404: Not found</h1>
       }
     ]
   }

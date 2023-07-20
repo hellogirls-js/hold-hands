@@ -9,9 +9,11 @@ import TimelineTweet from "../components/TimelineTweet";
 import dayjs from "dayjs";
 import { IconHeart, IconMessageCircle, IconRepeat, IconShare2 } from "@tabler/icons-react";
 import QuoteRetweet from "../components/QuoteRetweet";
+import { useNavigate } from "react-router-dom";
 
 export default function TweetPage() {
   const { username, tweet_id } = useParams();
+  const navigate = useNavigate();
   const user = USERS.filter(u => u.username === username)[0];
   const tweet = TWEETS.filter(t => tweet_id && t.tweet_id === parseInt(tweet_id))[0];
   const replies = TWEETS.filter(t => t.is_reply && t.original_tweetid === tweet.tweet_id);
@@ -59,7 +61,7 @@ export default function TweetPage() {
             }
             {
               qrtCount > 0 && 
-              <div className="tweet-page-stat">
+              <div className="tweet-page-stat" onClick={() => navigate("retweets/with_comments")}>
                 <div className="tweet-page-stat-number">
                   {qrtCount}
                 </div>

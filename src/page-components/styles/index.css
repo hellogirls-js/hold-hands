@@ -82,6 +82,7 @@
 
 .timeline-tweet-content-header {
   display: flex;
+  align-items: center;
   gap: 1.5%;
 }
 
