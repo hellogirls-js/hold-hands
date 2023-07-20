@@ -1,14 +1,15 @@
-import { IconHome2, IconSearch, IconBell, IconMail, IconBookmark, IconUser, IconDiamonds } from "@tabler/icons-react";
+import { IconHome2, IconSearch, IconBell, IconMail, IconBookmark, IconUser } from "@tabler/icons-react";
 import React from "react";
 import MenuLink from "./MenuLink";
 import { USERS } from "../data/users";
 import Avatar from "./Avatar";
+import Logo from "./Logo";
 
 function UserArea({ user }: { user: User }) {
   return (
     <div id="user-area">
       <div id="user-area-icon">
-        <Avatar user={user} />
+        <Avatar user={user} size={38} />
       </div>
       <div id="user-area-info">
         <div id="user-area-name">
@@ -27,10 +28,7 @@ export default function LeftMenu() {
     <div id="left-menu">
       <div id="top-area">
         <div id="menu-logo-full">
-          <div id="menu-logo">
-            <div className="dia-icon left"><IconDiamonds size={24} /></div>
-            <div className="dia-icon right"><IconDiamonds size={24} /></div>
-          </div>
+          <Logo />
           <div id="menu-logo-text">
             Hold-Hands
           </div>

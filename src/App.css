@@ -32,7 +32,10 @@
 }
 
 #menu-logo {
-  height: 24px;
+  height: auto;
+  width: auto;
+  padding-left: 10%;
+  box-sizing: border-box;
 }
 
 .dia-icon {
@@ -40,7 +43,7 @@
 }
 
 .dia-icon.right {
-  margin-left: -14px;
+  margin-left: -70%;
 }
 
 #menu-logo-text {
@@ -125,7 +128,7 @@
   border-bottom: none;
 }
 
-#content-header {
+#content-header, #content-header-mobile {
   background-color: #15202baa;
   backdrop-filter: blur(0.2);
   padding: 15px;
@@ -133,7 +136,11 @@
   border-bottom: 1px solid #38444d;
 }
 
-#content-header h2 {
+#content-header-mobile {
+  display: none;
+}
+
+#content-header h2, #content-header-mobile h2 {
   margin: 0;
 }
 
@@ -260,10 +267,19 @@
   }
 
   #content-header {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    box-sizing: border-box;
+    display: none;
+  }
+
+  #content-header-mobile {
+    display: block;
+    padding: 10px 15px;
+  }
+
+  #content-header-home {
+    display: flex;
+    align-items: center;
+    gap: 25%;
+    color: #1d9bf0;
   }
 
   #post-editor, #bottom-area {
