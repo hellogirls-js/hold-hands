@@ -153,4 +153,8 @@ video {
   .timeline-tweet-content-stat-number {
     font-size: 0.6rem;
   }
+
+  .timeline-tweet-settings {
+    display: none;
+  }
 }
