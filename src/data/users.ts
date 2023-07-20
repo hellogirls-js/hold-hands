@@ -86,5 +86,13 @@ export const USERS: User[] = [
     description: "Sharpened Claws, Bared Fangs! It's Wolf Rock!",
     account_created: "2020-03-01 00:00:00",
     icon_url: "https://res.cloudinary.com/df2zvtnjc/image/upload/c_crop,h_300,w_300,x_302/v1689810062/hold-hands-icons/koga_twt_icon.png"
+  },
+  {
+    user_id: 11,
+    username: "rannagisa",
+    display_name: "Nagisa Ran",
+    description: "",
+    account_created: "2020-03-01 00:00:00",
+    icon_url: "https://res.cloudinary.com/df2zvtnjc/image/upload/c_crop,h_300,w_300,x_229/v1689860302/hold-hands-icons/nagisa_twt_icon.png"
   }
 ]

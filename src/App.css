@@ -34,16 +34,17 @@
 #menu-logo {
   height: auto;
   width: auto;
-  padding-left: 10%;
   box-sizing: border-box;
 }
 
-.dia-icon {
-  display: inline;
+.dias {
+  display: flex;
+  align-items: center;
+  gap: 0;
 }
 
 .dia-icon.right {
-  margin-left: -70%;
+  margin-left: -33%;
 }
 
 #menu-logo-text {
@@ -251,6 +252,10 @@
   }
 
   #left-menu-nav > .menu-link-icon:not(:nth-last-of-type(-n+2)) {
+    display: none;
+  }
+
+  #menu-link-bookmarks, #menu-link-profile {
     display: none;
   }
 

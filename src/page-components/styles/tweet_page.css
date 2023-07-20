@@ -23,6 +23,7 @@
 }
 
 #tweet-page-goods {
+  margin-top: 15px;
   font-size: 1.3rem;
 }
 
@@ -104,6 +105,10 @@
   #tweet-page-reply-text {
     width: 33%;
     font-size: 1.2rem;
+  }
+
+  #tweet-page-options {
+    font-size: 0.8rem;
   }
 
 }

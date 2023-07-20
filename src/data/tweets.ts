@@ -121,7 +121,7 @@ export const TWEETS: Tweet[] = [
   {
     tweet_id: 10,
     author: 2,
-    tweet_content: "HIRO ASDLFKJGFD!?!?!? ALSO WHO TAUGHT YOU TO USE THAT FONT??",
+    tweet_content: "HIRO WHAT????????? ALSO WHO TAUGHT YOU HOW TO USE THAT FONT??",
     created_at: "2023-07-19 09:46:34",
     like_count: 0,
     retweet_count: 0,
@@ -178,5 +178,41 @@ export const TWEETS: Tweet[] = [
     media: [DanceInTheApocalpyse],
     original_tweetid: 0,
     is_qrt: true
+  },
+  {
+    tweet_id: 15,
+    author: 11,
+    tweet_content: "... I don't understand.",
+    created_at: "2023-07-19 10:00:00",
+    like_count: 19,
+    retweet_count: 0,
+    private_qrts: 0,
+    views: 2430,
+    original_tweetid: 0,
+    is_qrt: true
+  },
+  {
+    tweet_id: 16,
+    author: 6,
+    tweet_content: "you want me to explain it to you, nagi-senpai? it's pretty funny.",
+    created_at: "2023-07-19 10:02:00",
+    like_count: 0,
+    retweet_count: 0,
+    private_qrts: 0,
+    views: 403,
+    original_tweetid: 15,
+    is_reply: true
+  },
+  {
+    tweet_id: 17,
+    author: 4,
+    tweet_content: "Your Excellency! Please do not worry about the tomfoolery going on right now! It's better that you don't understand.",
+    created_at: "2023-07-19 10:03:00",
+    like_count: 3,
+    retweet_count: 0,
+    private_qrts: 0,
+    views: 892,
+    original_tweetid: 15,
+    is_reply: true
   }
 ]

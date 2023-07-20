@@ -137,7 +137,7 @@ video {
     max-height: 100%;
     max-width: 100%;
     overflow-y: scroll;
-    padding: 10vh 0vh;
+    padding: 5vh 0vw 10vh 0vw;
     box-sizing: border-box;
   }
 
@@ -147,11 +147,11 @@ video {
   }
 
   .timeline-tweet-content-footer {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
   .timeline-tweet-content-stat-number {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
 
   .timeline-tweet-settings {

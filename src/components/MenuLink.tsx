@@ -6,7 +6,7 @@ export default function MenuLink({ icon, name, navigateTo }: {icon: JSX.Element;
   const navigate = useNavigate();
 
   return (
-      <div className="menu-link" onClick={() => navigateTo && navigate(navigateTo) }>
+      <div className="menu-link" id={`menu-link-${name.toLocaleLowerCase()}`} onClick={() => navigateTo && navigate(navigateTo) }>
         <div className="menu-link-icon">{icon}</div>
         <div className="menu-link-name">{name}</div>
       </div>
