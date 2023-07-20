@@ -1,0 +1,182 @@
+import DanceInTheApocalpyse from "../media/dance_in_the_apocalypse.mp4";
+
+export const TWEETS: Tweet[] = [
+  {
+    tweet_id: 0,
+    author: 1,
+    tweet_content: "eden deez nuts lol",
+    created_at: "2023-07-19 09:00:00",
+    like_count: 3,
+    retweet_count: 2,
+    private_qrts: 3907,
+    views: 5743593
+  },
+  {
+    tweet_id: 1,
+    author: 2,
+    tweet_content: "??????????",
+    created_at: "2023-07-19 09:02:00",
+    like_count: 1,
+    retweet_count: 0,
+    private_qrts: 0,
+    original_tweetid: 0,
+    is_qrt: true,
+    views: 1243
+  },
+  {
+    tweet_id: 2,
+    author: 2,
+    tweet_content: "{1} um. is this allowed",
+    created_at: "2023-07-19 09:02:30",
+    like_count: 0,
+    retweet_count: 0,
+    private_qrts: 0,
+    views: 436,
+    mentions: [5],
+    original_tweetid: 1,
+    is_reply: true
+  },
+  {
+    tweet_id: 3,
+    author: 6,
+    tweet_content: "is it going overboard to lift weights here?",
+    created_at: "2023-07-19 09:15:00",
+    like_count: 0,
+    retweet_count: 0,
+    private_qrts: 0,
+    views: 839
+  },
+  {
+    tweet_id: 4,
+    author: 3,
+    tweet_content: "RINNE-KUN?!?! DO YOU WANT US TO LOSE OUR JOB???",
+    created_at: "2023-07-19 09:10:00",
+    like_count: 1,
+    retweet_count: 0,
+    private_qrts: 0,
+    views: 720,
+    original_tweetid: 0,
+    is_qrt: true
+  },
+  {
+    tweet_id: 5,
+    author: 4,
+    tweet_content: "Amagi! Please delete this tweet! Not only is this unprofessional, but I cannot allow you to slander Eden's name! Thank you.",
+    created_at: "2023-07-19 09:30:00",
+    like_count: 1837,
+    retweet_count: 249,
+    private_qrts: 0,
+    views: 39432,
+    original_tweetid: 0,
+    is_qrt: true
+  },
+  {
+    tweet_id: 6,
+    author: 9,
+    tweet_content: "JUN-KUN! our name is being dragged thru the mud and THIS is what you're thinking about?!",
+    created_at: "2023-07-19 09:25:00",
+    like_count: 0,
+    retweet_count: 0,
+    private_qrts: 0,
+    views: 244,
+    original_tweetid: 3,
+    is_reply: true
+  },
+  {
+    tweet_id: 7,
+    author: 7,
+    tweet_content: "over 3k qrts dude just delete this shit already",
+    created_at: "2023-07-19 09:40:00",
+    like_count: 29,
+    retweet_count: 0,
+    private_qrts: 0,
+    views: 1234,
+    original_tweetid: 0,
+    is_reply: true
+  },
+  {
+    tweet_id: 8,
+    author: 9,
+    tweet_content: "ANYWAYS stan eden because it's the only unit with THE tomoe hiyori 💖💖💖💖💖💖",
+    created_at: "2023-07-19 09:12:23",
+    like_count: 245,
+    retweet_count: 12,
+    private_qrts: 0,
+    views: 8945,
+    original_tweetid: 0,
+    is_qrt: true
+  },
+  {
+    tweet_id: 9,
+    author: 5,
+    tweet_content: "NII-SAN GET BEHIND ME 𝕴 𝖜𝖎𝖑𝖑 𝖕𝖗𝖔𝖙𝖊𝖈𝖙 𝖞𝖔𝖚",
+    created_at: "2023-07-19 09:45:00",
+    like_count: 1,
+    retweet_count: 0,
+    private_qrts: 0,
+    views: 143,
+    original_tweetid: 0,
+    is_qrt: true
+  },
+  {
+    tweet_id: 10,
+    author: 2,
+    tweet_content: "HIRO ASDLFKJGFD!?!?!? ALSO WHO TAUGHT YOU TO USE THAT FONT??",
+    created_at: "2023-07-19 09:46:34",
+    like_count: 0,
+    retweet_count: 0,
+    private_qrts: 0,
+    views: 24,
+    original_tweetid: 9,
+    is_reply: true
+  },
+  {
+    tweet_id: 11,
+    author: 10,
+    tweet_content: "I'LL SEND A FUCKIN PIPE BOMB TO YOUR HOUSE",
+    created_at: "2023-07-19 09:50:22",
+    like_count: 324,
+    retweet_count: 59,
+    private_qrts: 0,
+    views: 13243,
+    original_tweetid: 0,
+    is_qrt: true
+  },
+  {
+    tweet_id: 12,
+    author: 7,
+    tweet_content: "ratio",
+    created_at: "2023-07-19 09:26:34",
+    like_count: 2,
+    retweet_count: 0,
+    private_qrts: 0,
+    views: 1340,
+    original_tweetid: 0,
+    is_qrt: true
+  },
+  {
+    tweet_id: 13,
+    author: 8,
+    tweet_content: "Amagi, how old are you? These jokes are not anymore.",
+    created_at: "2023-07-19 09:23:00",
+    like_count: 23,
+    retweet_count: 0,
+    private_qrts: 0,
+    views: 19433,
+    original_tweetid: 0,
+    is_reply: true
+  },
+  {
+    tweet_id: 14,
+    author: 9,
+    tweet_content: "CAN YOUR UNIT DO THIS???",
+    created_at: "2023-07-19 09:01:00",
+    like_count: 54943,
+    retweet_count: 4329,
+    private_qrts: 34,
+    views: 234432,
+    media: [DanceInTheApocalpyse],
+    original_tweetid: 0,
+    is_qrt: true
+  }
+]

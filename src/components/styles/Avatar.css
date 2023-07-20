@@ -1,0 +1,5 @@
+.user-icon img {
+  border-radius: 50%;
+  pointer-events: none;
+  user-select: none;
+}

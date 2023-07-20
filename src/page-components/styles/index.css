@@ -1,0 +1,144 @@
+#post-editor {
+  display: flex;
+  padding: 15px 20px;
+  gap: 10px;
+  border-bottom: 1px solid #38444d;
+}
+
+#post-editor-icon {
+  flex-basis: 48px;
+}
+
+#post-editor-area {
+  flex-grow: 1;
+}
+
+#post-editor-textarea {
+  resize: none;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  font-size: 1.5rem;
+  font-family: inherit;
+  padding: 10px 0px;
+}
+
+#post-editor-textarea::placeholder {
+  color: #99aab8;
+}
+
+#post-editor-textarea:focus {
+  outline: none;
+}
+
+#post-editor-settings {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#post-editor-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #1d9bf0;
+}
+
+#post-editor-button {
+  border: none;
+  border-radius: 25px;
+  background-color: #1d9bf0;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 10px 20px;
+}
+
+.timeline-tweet {
+  display: flex;
+  gap: 3%;
+  padding: 20px 20px 0px 20px;
+  border-bottom: 1px solid #38444d;
+  cursor: pointer;
+  transition: background-color 0.1s;
+}
+
+.timeline-tweet:hover {
+  background-color: #f7f9f907;
+}
+
+.timeline-tweet:last-child {
+  border-bottom: none;
+}
+
+.timeline-tweet-icon {
+  flex-basis: 48px;
+}
+
+.timeline-tweet-content {
+  flex-grow: 1;
+}
+
+.timeline-tweet-content-header {
+  display: flex;
+  gap: 1.5%;
+}
+
+.timeline-tweet-display-name {
+  font-weight: 500;
+}
+
+.timeline-tweet-username, .timeline-tweet-time-passed {
+  color: #8b98a5;
+}
+
+.timeline-tweet-display-name, .timeline-tweet-username {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.timeline-tweet-content-container p {
+  margin: 0;
+  margin-top: 1%;
+}
+
+.timeline-tweet-content-footer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  color: #8b98a5;
+  padding: 10px 0px;
+  margin-top: 5px;
+}
+
+.timeline-tweet-content-stat {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+}
+
+.timeline-tweet-settings {
+  flex-basis: 20px;
+}
+
+video {
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  #timeline {
+    max-height: 100%;
+    overflow-y: scroll;
+    padding: 10vh 0vh;
+  }
+
+  .timeline-tweet-content-footer {
+    font-size: 0.8rem;
+  }
+
+  .timeline-tweet-content-stat-number {
+    font-size: 0.6rem;
+  }
+}
